@@ -31,6 +31,25 @@ object HeroesOfTheLambda {
   }
 }
 
+object examples {
+
+  import HeroesOfTheLambda._
+  val a1 = attack(star, ragnar)
+  val a2 = attack(baern, aela)
+  val a3 = rohan attack warwick
+
+  val someFireball: Option[FireSpell] = Some(fireball)
+  val noneSword: Option[Sword] = None
+
+  val b1 = attack(someFireball, baern)
+  val b2 = attack(noneSword, baern)
+
+  // ! val c1 = attack(warwick, aela)
+  // ! val c2 = simultaneousAttack(star, rohan)
+
+  val d1 = simultaneousAttack(ragnar, rohan)
+}
+
 /**
   * Challenges:
   *
